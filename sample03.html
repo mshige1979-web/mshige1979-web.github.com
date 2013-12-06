@@ -1,0 +1,35 @@
+<!DOCType html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<title>AngularJS Sample01</title>
+	</head>
+	<body ng-app="sample03">
+		<div ng-controller="controller03">
+			<div>
+				<div>
+					回数を入力＝＞<input type="text" ng-model="count1" />
+				</div>
+				<div>
+					チェック＝＞<input type="checkbox" ng-model="check1" ng-true-value="1" ng-false-value="0" />
+				</div>
+			</div>
+			<hr />
+			<div>
+				<div>
+					設定項目確認
+				</div>
+				<div>
+					<p>回数：{{count1}}</p>
+				</div>
+				<div>
+					<p>チェック内容：{{check1}}</p>
+				</div>
+			</div>
+			<hr />
+		</div>
+		
+		<script src="./js/angular.min.js" type="text/javascript"></script>
+		<script src="./js/app03.js"></script>
+	</body>
+</html>
