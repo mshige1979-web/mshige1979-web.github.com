@@ -1,0 +1,29 @@
+<!DOCType html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8" />
+		<title>AngularJS Sample04</title>
+	</head>
+	<body ng-app="sample04">
+		<div ng-controller="controller04">
+			
+			<input type="button" value="表示１" ng-click="display(0)" />
+			<input type="button" value="表示２" ng-click="display(1)" />
+			
+			<div ng-repeat="data in lists">
+				<p>名前：{{data}}</p>
+			</div>
+			<hr />
+			
+			<div ng-repeat="item in items">
+				<p>名前：{{item.name}}</p>
+				<p>件数：{{item.count}}</p>
+			</div>
+			<hr />
+			
+		</div>
+		
+		<script src="./js/angular.min.js" type="text/javascript"></script>
+		<script src="./js/app04.js"></script>
+	</body>
+</html>
